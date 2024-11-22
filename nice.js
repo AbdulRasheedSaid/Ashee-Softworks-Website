@@ -17,41 +17,7 @@ function applySystemTheme() {
   // Listen for system theme changes and update the theme accordingly
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applySystemTheme);
   
-
-// Toggle between light and dark modes
-const toggleThemeButton = document.getElementById('toggle-theme');
-
-toggleThemeButton.addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
-  document.body.classList.toggle('light-mode');
-});
-
  
- /* const scrollButton = document.getElementById('scrollButton');
-    
-
- window.addEventListener('scroll', () => {
-
-   if (window.scrollY > 10) {
-     scrollButton.style.display = 'block';
-   } else {
-     scrollButton.style.display = 'none';
-   }
- });
-
-
- 
- const mainnav = document.getElementById('mainnav');
-    
-
- window.addEventListener('scroll', () => {
-
-   if (window.scrollY > 10) {
-     mainnav.style.display = 'none';
-   } else {
-     mainnav.style.display = 'block';
-   }
- }); */
 
  // JavaScript to dynamically update the copyright year
 document.addEventListener('DOMContentLoaded', () => {

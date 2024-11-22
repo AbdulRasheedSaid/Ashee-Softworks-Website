@@ -54,11 +54,11 @@ body {
   }
   
   /* For elements */
-  .container {
+  /* .container {
     position: relative;
     z-index: 1;
     padding: 20px;
-  }
+  } */
   
   /* Styling for the grid for light mode */
   body.light-mode::before {
@@ -103,10 +103,10 @@ body {
   }
   
 
-  .theme-toggle{
+  /* .theme-toggle{
     position: absolute;
     left: 100000px;
-  }
+  } */
   
 
 
@@ -169,6 +169,10 @@ body {
     border: #ecf0f100;
   }
 
+  #pricing{
+    padding-bottom: 20%;
+  }
+
     #intro{
         padding-top: 6.25%;
     }
@@ -179,11 +183,12 @@ body {
 
     #contact{
         padding-top: 6.25%;
+        padding-bottom: 6,25%;
     }
 
     #about{
-        padding-top: 6.25%;
-        padding-bottom: 10%;
+        padding-top: 15%;
+        padding-bottom: 20%;
     }
 
     .responsive-iframe {
@@ -192,6 +197,7 @@ body {
 
     #tos{
       padding-top: 8%;
+      padding-bottom: 20%;
     }
     /* .responsive-iframe {
         position: relative;
