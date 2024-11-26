@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(120deg, #1a1a1a, #0a0a0a);
+    color: #333;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+/* Header Section */
+.tos-header {
+    text-align: center;
+    background-color: #ff5722;
+    color: white;
+    padding: 50px 20px;
+    padding-top: 8rem;
+}
+
+.tos-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.tos-header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Terms of Service Content */
+.tos-content {
+    max-width: 800px;
+    margin: 20px auto;
+    background: linear-gradient(120deg, #1a1a1a, #0a0a0a);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(255, 87, 34, 0.4);
+}
+
+.tos-section {
+    margin-bottom: 20px;
+}
+
+.tos-section h2 {
+    color: #ff5722;
+    margin-bottom: 10px;
+}
+
+.tos-section p,
+.tos-section ul {
+    margin: 10px 0;
+    padding: 0;
+}
+
+.tos-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
