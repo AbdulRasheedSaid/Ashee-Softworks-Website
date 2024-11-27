@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,6 +46,10 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7SCTGGH"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header class="navbar">
         <div class="navbar-container">
             <!-- Logo -->
@@ -419,7 +422,7 @@
             </div>
             <div class="contact-form">
                 <h3>Send Us a Message</h3>
-                <form action="submit_form.php" method="POST">
+                <form id="contact-form">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" required>
                     
@@ -429,7 +432,7 @@
                     <label for="message">Your Message</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                     
-                    <button type="submit" class="cta-button">Send Message</button>
+                    <button type="submit" id="button" value="Send Email" class="cta-button">Submit</button>
                 </form>
                 <!-- Success and Error Messages -->
                 <div id="successMessage" class="message success">Your message was sent successfully!</div>
@@ -550,9 +553,9 @@
 
         </div>
     </footer>
-    <script src="js/message.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="application/ld+json">
+    
+    <!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
+    <!-- <script type="application/ld+json">
     {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -568,17 +571,17 @@
         "telephone": "+1-234-567-8900",
         "contactType": "Customer Support"
     }
-    }
-    </script>
+    } -->
+    
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
-    <script>
+   <!--  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script> -->
+    <!-- <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-XXXXXXXXX-X');
     </script>
-
+ -->
     <!-- <script>
         !function(f,b,e,v,n,t,s) {
             if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -593,16 +596,18 @@
         fbq('track', 'PageView');
     </script> -->
 
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
+    <script type="text/javascript">
+    emailjs.init('4ebse5A_vBjt1fdFE')
+    </script>
 
     <!-- <script src="//code.tidio.co/your-tidio-key.js" async></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script> -->
     <script src="js/scripts.js"></script>
+    <script src="js/message.js"></script>
 </body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7SCTGGH"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 </html>

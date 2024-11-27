@@ -2,7 +2,7 @@
 //     emailjs.init('4ebse5A_vBjt1fdFE'); 
 //   })();
 
-//   document.getElementById('contactForm').addEventListener('submit', function(event) {
+//   document.getElementById('contact-form').addEventListener('submit', function(event) {
 //     event.preventDefault();
 
 //     const formData = {
@@ -23,34 +23,26 @@
 //     this.reset();
 //   });
 
-  (function() {
-    emailjs.init('4ebse5A_vBjt1fdFE'); // Replace with your EmailJS Public Key
-  })();
+const btn = document.getElementById('button');
 
-  document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+document.getElementById('contact-form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
 
-    const form = this;
-    const successMessage = document.getElementById('successMessage');
-    const errorMessage = document.getElementById('errorMessage');
+   btn.value = 'Sending...';
 
-    const formData = {
-      name: form.name.value,
-      email: form.email.value,
-      message: form.message.value,
-    };
+   const serviceID = 'service_pr7rnl4';
+   const templateID = 'template_blyfruc';
 
-    // Hide previous messages
-    successMessage.style.display = 'none';
-    errorMessage.style.display = 'none';
+   emailjs.send(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
 
-    emailjs.send('service_pr7rnl4', 'template_blyfruc', formData)
-      .then(() => {
-        successMessage.style.display = 'block';
-        form.reset(); // Optionally reset the form
-      })
-      .catch((error) => {
-        console.error('Error sending message:', error);
-        errorMessage.style.display = 'block';
-      });
-  });
+console.log('it is finished');
+
