@@ -34,6 +34,14 @@
     <meta property="og:url" content="https://example.com/"> -->
     <meta property="og:type" content="website">
 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T7SCTGGH');</script>
+    <!-- End Google Tag Manager -->
+
     <meta name="keywords" content="web development, APIs, custom websites, technology, design">
     <link rel="stylesheet" href="css/navfoot.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -405,9 +413,9 @@
         <div class="contact-info">
             <div class="contact-details">
                 <h3>Get in Touch</h3>
-                <p><strong>Email:</strong> asheesoftworks@gmail.com</p>
-                <p><strong>Phone:</strong> +233 55-305-065</p>
-                <p><strong>Location:</strong> Adenta St, Accra, Ghana</p>
+                <p>Email: <a href="mailto:asheesoftworks@gmail.com">asheesoftworks@gmail.com</a></p>
+                <p>Phone: <a href="tel:055305065">+233 55-305-065</a></p>
+                <p>Address: Adenta St, Accra, Ghana</p>
             </div>
             <div class="contact-form">
                 <h3>Send Us a Message</h3>
@@ -423,6 +431,10 @@
                     
                     <button type="submit" class="cta-button">Send Message</button>
                 </form>
+                <!-- Success and Error Messages -->
+                <div id="successMessage" class="message success">Your message was sent successfully!</div>
+                <div id="errorMessage" class="message error">There was an error sending your message. Please try again later.</div>
+
             </div>
         </div>
     
@@ -538,7 +550,8 @@
 
         </div>
     </footer>
-    
+    <script src="js/message.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="application/ld+json">
     {
     "@context": "https://schema.org",
@@ -566,7 +579,7 @@
         gtag('config', 'UA-XXXXXXXXX-X');
     </script>
 
-    <script>
+    <!-- <script>
         !function(f,b,e,v,n,t,s) {
             if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
             if(!f._fbq)f._fbq=n;
@@ -578,14 +591,18 @@
         }(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', 'YOUR_PIXEL_ID');
         fbq('track', 'PageView');
-    </script>
+    </script> -->
 
 
 
-    <script src="//code.tidio.co/your-tidio-key.js" async></script>
+    <!-- <script src="//code.tidio.co/your-tidio-key.js" async></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script> -->
     <script src="js/scripts.js"></script>
 </body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7SCTGGH"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 </html>
