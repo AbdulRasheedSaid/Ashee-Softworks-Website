@@ -74,7 +74,6 @@ h1, h2, h3, h4, h5, h6, body, ul, li, a {
 .nav-links .dropdown-menu {
     position: absolute;
     top: 100%;
-    left: 0;
     /* background: white; */
     background: linear-gradient(120deg, #1a1a1a, #0a0a0a);
     font-family: 'Poppins', sans-serif;

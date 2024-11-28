@@ -538,14 +538,6 @@ body {
     cursor: pointer;
 }
 
-.contact-form button:hover {
-    background: linear-gradient(90deg, #ff9800, #ff5722);
-}
-
-#successMessage, #errorMessage{
-    display: none;
-}
-
 
 /* Google Map */
 .map {
